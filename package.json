@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev ./frontend",
     "build": "npm install && next build ./frontend",
-    "start": "npm install && next start"
+    "start": "npm install && next start ./frontend"
   },
   "keywords": [],
   "author": "",
