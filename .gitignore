@@ -1,3 +1,4 @@
-.next
 node_modules
-next-env.d.ts
+frontend/.next
+frontend/next-env.d.ts
+frontend/tsconfig.json
