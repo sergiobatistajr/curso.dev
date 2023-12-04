@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev ./frontend",
-    "build": "next build ./frontend",
-    "start": "next start ./frontend"
+    "dev": "next dev ./frontend"
   },
   "keywords": [],
   "author": "",
