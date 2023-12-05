@@ -9,7 +9,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "lint:check": "prettier --check .",
-    "lint:fix": "prettier --write . ",
+    "lint:fix": "prettier --write .",
     "back:dev": "nodemon --watch 'backend/src/**/*.ts' --exec ts-node ./backend/src/index.ts"
   },
   "keywords": [],
