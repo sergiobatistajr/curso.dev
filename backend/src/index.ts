@@ -1,10 +1,10 @@
-import * as express from "express";
+import express from "express";
 
 const app = express();
 app.use(express.json());
 
-app.get("/", (req, res) => res.status(200).json("opa"));
+app.get("/api/v1/status", (req, res) => res.status(200).json("são top"));
 
-app.listen(3000);
+app.listen(3000, () => console.log("Online!!!"));
 
 export default app;
