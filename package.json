@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "module": "module",
+  "type": "commonjs",
   "scripts": {
     "next:dev": "next dev ./frontend",
     "test": "jest",
     "test:watch": "jest --watch",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
-    "back:dev": "nodemon --watch '**/*.ts' --exec ts-node ./backend/src/index.ts"
+    "back:start": "ts-node ./backend/src/index.ts",
+    "back:dev": "nodemon --exec ts-node ./backend/src/index.ts"
   },
   "keywords": [],
   "author": "",
