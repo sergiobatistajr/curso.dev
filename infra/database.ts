@@ -1,5 +1,6 @@
 import { Client } from "pg";
-import("dotenv/config");
+import { config } from "dotenv";
+config({ path: ".env.development" });
 
 async function query(queryObject: string) {
   const client = new Client({
