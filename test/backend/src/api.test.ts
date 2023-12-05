@@ -1,4 +1,4 @@
-import app from "../backend/src";
+import app from "../../../backend/src";
 import * as request from "supertest";
 describe("Api workflow", () => {
   it("Testando a rota GET /", async () => {
