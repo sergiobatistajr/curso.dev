@@ -6,12 +6,15 @@
   "type": "commonjs",
   "scripts": {
     "next:dev": "next dev ./frontend",
+    "services:up": "docker compose -f infra/compose.yaml up -d",
+    "services:stop": "docker compose -f infra/compose.yaml stop",
+    "services:down": "docker compose -f infra/compose.yaml down",
     "test": "jest",
     "test:watch": "jest --watch",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
     "back:start": "ts-node ./backend/src/index.ts",
-    "back:dev": "nodemon --exec ts-node ./backend/src/index.ts"
+    "back:dev": "npm run services:up && nodemon --exec ts-node ./backend/src/index.ts"
   },
   "keywords": [],
   "author": "",
