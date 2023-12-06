@@ -1,4 +1,4 @@
-import database from "../../../../infra/database";
+import database from "infra/database";
 
 export async function GET() {
   const updateAt = new Date();
